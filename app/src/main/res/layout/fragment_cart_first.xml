@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@mipmap/back1">
+
+    <RelativeLayout
+        android:id="@+id/itemsRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Your Cart Items"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@mipmap/back3"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescription"
+            android:layout_marginTop="25dp" />
+
+        <LinearLayout
+            android:id="@+id/btnTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:textColor="#E60628"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="55$"
+                android:textColor="#E60628"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="Next" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtNoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Your cart is empty"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        android:textColor="#fff"/>
+
+</RelativeLayout>

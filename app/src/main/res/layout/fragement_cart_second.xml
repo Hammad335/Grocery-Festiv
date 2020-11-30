@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp"
+    android:background="@mipmap/back1">
+
+    <TextView
+        android:id="@+id/txtsecondCartHeading"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="70dp"
+        android:text="Provide Details"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/back3"/>
+
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Address:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtsecondCartHeading"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/edtTxtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_marginTop="10dp"
+        android:hint="Address"
+        android:lines="2"
+        android:textColor="@color/material_on_primary_disabled"
+        android:textColorHint="@color/material_on_primary_disabled"/>
+
+    <TextView
+        android:id="@+id/txtZipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtAddress"
+        android:layout_marginTop="10dp"
+        android:text="Zip code:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/edtTxtZipCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtZipCode"
+        android:layout_marginTop="10dp"
+        android:hint="Zip Code"
+        android:textColor="@color/material_on_primary_disabled"
+        android:textColorHint="@color/material_on_primary_disabled"/>
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtZipCode"
+        android:layout_marginTop="10dp"
+        android:text="Phone Number:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/edtTxtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPhoneNumber"
+        android:layout_marginTop="10dp"
+        android:hint="Phone Number"
+        android:textColor="@color/material_on_primary_disabled"
+        android:textColorHint="@color/material_on_primary_disabled"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtPhoneNumber"
+        android:layout_marginTop="10dp"
+        android:text="Email:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/edtTxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/material_on_primary_disabled"
+        android:textColorHint="@color/material_on_primary_disabled"/>
+
+    <LinearLayout
+        android:id="@+id/btnLinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLinLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Warning"
+        android:textColor="#EE001C"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
