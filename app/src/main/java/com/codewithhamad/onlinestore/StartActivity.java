@@ -39,6 +39,8 @@ public class StartActivity extends AppCompatActivity {
         logo.startAnimation(lefttoright);
         trolley.startAnimation(bounce);
 
+        //comments
+
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
