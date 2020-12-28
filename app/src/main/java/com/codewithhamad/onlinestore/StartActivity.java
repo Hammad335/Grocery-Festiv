@@ -49,8 +49,6 @@ public class StartActivity extends AppCompatActivity {
                 Intent intent= new Intent(StartActivity.this, MainActivity.class);
                 startActivity(intent);
 
-                // Using fadein animation on start shopping button
-//                overridePendingTransition(R.anim.fadein, 0);
             }
         });
 

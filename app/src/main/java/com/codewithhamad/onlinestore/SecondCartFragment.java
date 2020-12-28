@@ -50,6 +50,7 @@ public class SecondCartFragment extends Fragment {
             }
         }
 
+        // have to set back button navigation
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
